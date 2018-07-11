@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_refresh_root"
+    android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="0dp">
+
+    <!--刷新箭头-->
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_refresh_arrow"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30"
+        android:layout_marginLeft="@dimen/x70"
+        android:src="@mipmap/icon_refresh_arrow"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/tv_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_toRightOf="@+id/iv_refresh_arrow"
+        android:text="正在刷新"
+        android:textSize="@dimen/x20"/>
+
+</RelativeLayout>
+
